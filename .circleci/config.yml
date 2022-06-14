@@ -17,6 +17,10 @@
             command: |
               echo "hello from third project "
         - run:
+            name: install 
+            command: |
+              npm run install
+        - run:
             name: test
             command: |
               npm run test
