@@ -8,10 +8,10 @@
       docker:
         # the base image can run most needed actions with orbs
         - image: "cimg/base:stable"
-      steps:
+      steps:  
+        - checkout
         - node/install
           node-version: 16.14
-        - checkout
         
         # install dependencies in both apps
         - run:
