@@ -14,12 +14,9 @@
         - checkout
         - node/install:        
           node-version: '16.14'
+        - eb/setup
         
         # install dependencies in both apps
-        - run:
-            name: hello
-            command: |
-              echo "hello from third project "
         - run:
             name: install 
             command: |
