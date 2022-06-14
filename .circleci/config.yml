@@ -3,6 +3,7 @@
     # orgs contain basc recipes and reproducible actions (install node, aws, etc.)
     node: circleci/node@5.0.2
     aws-s3: circleci/aws-s3@3.0.0
+    aws-elastic-beanstalk: circleci/aws-elastic-beanstalk@2.0.1
     # different jobs are calles later in the workflows sections
   jobs:
     build:
@@ -31,4 +32,8 @@
             name: build
             command: |
               npm run build
+        - run:
+            name: deploy
+            command: |
+              npm run deploy
               
