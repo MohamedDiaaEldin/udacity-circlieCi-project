@@ -10,7 +10,7 @@
         - image: "cimg/base:stable"
       steps:
         - node/install
-          node-version: '16.14.2'
+          node-version: 16.14
         - checkout
         
         # install dependencies in both apps
