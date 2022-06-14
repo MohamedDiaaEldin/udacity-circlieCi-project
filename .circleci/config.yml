@@ -2,7 +2,7 @@
   orbs:
     # orgs contain basc recipes and reproducible actions (install node, aws, etc.)
     node: circleci/node@5.0.2
-    aws-s3: circleci/aws-s3@3.0
+    aws-s3: circleci/aws-s3@3.0.0
     # different jobs are calles later in the workflows sections
   jobs:
     build:
@@ -32,8 +32,3 @@
             command: |
               npm run build
               
-            
-aws s3api create-bucket \
-    --bucket udagram \
-    --region us-east-1 \
-    --profile fwd
