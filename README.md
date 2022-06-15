@@ -17,3 +17,9 @@
 - test script for fullstack 
 - build script for fullstack
 - deploy scipt to deploy on beanstalk and s3
+
+
+### Project Overview
+- Infrastructure details [Infrastructure.md](./Infrastructure.md)
+- Pipile details [Pipeline.md](./Pipeline.md)
+- Dependencies details [App_dependencies.md](./App_dependencies.md)
