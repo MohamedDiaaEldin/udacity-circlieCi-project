@@ -27,6 +27,14 @@
             command: |
               npm run build
   workflows:
-      Branches:
-        only: 
-        - main
+    version: 2.1
+    build_and_test:
+      jobs:    
+        - install
+        - test 
+        - build 
+      filters:
+        branches:
+          only:
+            - main
+      
