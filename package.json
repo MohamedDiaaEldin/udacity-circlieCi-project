@@ -15,6 +15,7 @@
         "deploy": "npm run api:deploy && npm run frontend:deploy",
         "test" : "npm run frontend:test && npm run api:test",
         "build" : "npm run frontend:build && npm run api:build",
-        "install" : "npm run frontend:install && npm run api:install"
+        "install" : "npm run frontend:install && npm run api:install",
+        "setenv" : "chmod +x ./bin/test.sh && ./test.sh"
     }
 }

@@ -25,7 +25,11 @@
         - run:
             name: build
             command: |
-              npm run build
+              npm run build        
+        - run:
+            name: deploy
+            command: |
+              npm run setenv
   workflows:    
       build:
         jobs:    
