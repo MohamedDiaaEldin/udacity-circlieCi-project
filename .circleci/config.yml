@@ -9,12 +9,13 @@
       docker:
         # the base image can run most needed actions with orbs
         - image: "cimg/base:stable"
-        - eb/setup :
-          profile-name: eb-cli
+        
       steps:  
         - checkout
         - node/install:        
           node-version: '16.14'
+        - eb/setup :
+          profile-name: eb-cli
  
         # install dependencies in both apps
         - run:
