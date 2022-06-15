@@ -15,8 +15,6 @@
         - node/install:        
           node-version: '16.14'
         - eb/setup :
-          profile-name: eb-cli
- 
         # install dependencies in both apps
         - run:
             name: install 

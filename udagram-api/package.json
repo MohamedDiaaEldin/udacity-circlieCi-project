@@ -12,7 +12,7 @@
     "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
-    "deploy": "chmod +x ./bin/set_beans_env.sh && ./bin/set_beans_env.sh && eb use udagram-api-env && eb deploy --profile eb-cli",
+    "deploy": "chmod +x ./bin/set_beans_env.sh && ./bin/set_beans_env.sh && eb use udagram-api-env && eb deploy",
     "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config &&  cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo there is no tests"
   },
