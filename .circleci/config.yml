@@ -30,8 +30,3 @@
             name: build
             command: |
               npm run build
-        - run:
-            name: deploy
-            command: |
-              npm run deploy
-              
