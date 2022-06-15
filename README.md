@@ -1,3 +1,9 @@
+# highlighted changes
+- create documentaion for pipline - infrastructure  
+- use CircleCi to set environment variables [set env script](./udagram-api/bin/set_beans_env.sh)
+- deploy script [deploy script](./udagram-api/package.json)
+
+
 
 # frontend URL 
     http://udagram-cap.s3-website-us-east-1.amazonaws.com/
@@ -20,6 +26,6 @@
 
 
 ### Project Overview
-- Infrastructure details [Infrastructure.md](./Infrastructure.md)
+- Infrastructure details [Infrastructure.md](./documentation/Infrastructure.md)
 - Pipile details [Pipeline.md](./Pipeline.md)
-- Dependencies details [App_dependencies.md](./App_dependencies.md)
+- Dependencies details [App_dependencies.md](./documentation/App_dependencies.md)
