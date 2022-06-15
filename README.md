@@ -1,3 +1,6 @@
+
+# frontend URL 
+    http://udagram-cap.s3-website-us-east-1.amazonaws.com/
 ## Project Stucture 
 - screenshots folder contains Screenshots of the AWS srvices and Circle Ci 
 - udagrame-api contains backend api 
