@@ -1,6 +1,6 @@
 ## Infrastructure on AWS
 
-<img src="./diagram/aws-services.png">
+<img src="../diagram/aws-services.png">
 
 
 ### AWS services 
