@@ -27,8 +27,7 @@
             command: |
               npm run build
   workflows:
-    version: 2.1
-    build:
+    version: 2.1    
       build:
         jobs:    
           - install
