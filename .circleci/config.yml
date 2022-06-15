@@ -26,16 +26,10 @@
             name: build
             command: |
               npm run build
-  workflows:
-    version: 2.1    
-      build:
+  workflows:    
+      build_and_test:
         jobs:    
-          - install
-          - test 
-          - build 
-    nightly:
-        triggers:
-          - schedule:
+          - build : 
               filters:
                 branches:
                   only:
