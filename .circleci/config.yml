@@ -28,13 +28,14 @@
               npm run build
   workflows:
     version: 2.1
-    build_and_test:
-      jobs:    
-        
-        - test 
-        - build 
-      filters:
-        branches:
-          only:
-            - main
-      
+    build:
+      build:
+        jobs:    
+          - install
+          - test 
+          - build 
+            filters:
+              branches:
+                only:
+                  - main
+            
