@@ -3,8 +3,7 @@
     # orgs contain basc recipes and reproducible actions (install node, aws, etc.)
     node: circleci/node@5.0.2
     aws-s3: circleci/aws-s3@3.0.0
-    eb: circleci/aws-elastic-beanstalk@1.0.0:
-      profile-name:eb-cli
+    eb: circleci/aws-elastic-beanstalk@1.0.0
     # different jobs are calles later in the workflows sections
   jobs:
     build:
@@ -15,7 +14,8 @@
         - checkout
         - node/install:        
           node-version: '16.14'
-        - eb/setup
+        - eb/setup:
+          profile-name: eb-cli
         
         # install dependencies in both apps
         - run:
