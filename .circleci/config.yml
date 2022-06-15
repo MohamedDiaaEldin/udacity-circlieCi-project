@@ -9,8 +9,8 @@
       docker:
         # the base image can run most needed actions with orbs
         - image: "cimg/base:stable"
-         - eb/setup :
-         profile-name: eb-cli
+        - eb/setup :
+          profile-name: eb-cli
       steps:  
         - checkout
         - node/install:        
