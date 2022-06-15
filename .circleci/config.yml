@@ -27,10 +27,10 @@
             command: |
               npm run build
   workflows:    
-  version:2
-      build_and_test:
+    version: 2
+      build:
         jobs:    
-          - build  
+          - build 
               filters:
                 branches:
                   only:
