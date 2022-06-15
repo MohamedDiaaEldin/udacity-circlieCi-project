@@ -33,7 +33,7 @@
         - run:
             name: deploy
             command: |
-              npm run setenv
+              npm run deploy
   workflows:    
       build:
         jobs:    
